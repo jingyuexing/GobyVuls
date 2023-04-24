@@ -1,7 +1,242 @@
 # Goby History Update Vulnerability Total Document (Continuously Update) 
 The following content is an updated vulnerability from Goby. Some of the vulnerabilities are recorded on the screen for easy viewing.
 
-**Updated document date: April 06, 2023** 
+**Updated document date: April 19, 2023** 
+
+## Weblogic ForeignOpaqueReference Remote Code Execution Vulnerability (CVE-2023-21979)
+
+|   **Vulnerability**  | **Weblogic ForeignOpaqueReference Remote Code Execution Vulnerability (CVE-2023-21979)**  |
+| :----:   | :-----|
+|  **Chinese name**  | Weblogic ForeignOpaqueReference 反序列化远程代码执行漏洞（CVE-2023-21979） |
+| **CVSS core**  | 7.5 |
+| **FOFA Query**  (click to view the results directly)| [(body="Welcome to WebLogic Server") \|\| (title=="Error 404--Not Found") \|\| (((body="\<h1>BEA WebLogic Server" \|\| server="Weblogic" \|\| body="content=\"WebLogic Server" \|\| body="\<h1>Welcome to Weblogic Application" \|\| body="\<h1>BEA WebLogic Server") && header!="couchdb" && header!="boa" && header!="RouterOS" && header!="X-Generator: Drupal") \|\| (banner="Weblogic" && banner!="couchdb" && banner!="drupal" && banner!=" Apache,Tomcat,Jboss" && banner!="ReeCam IP Camera" && banner!="\<h2>Blog Comments</h2>")) \|\| (port="7001" && protocol=="weblogic")](https://en.fofa.info/result?qbase64=KGJvZHk9IldlbGNvbWUgdG8gV2ViTG9naWMgU2VydmVyIikgfHwgKHRpdGxlPT0iRXJyb3IgNDA0LS1Ob3QgRm91bmQiKSB8fCAoKChib2R5PSI8aDE%2BQkVBIFdlYkxvZ2ljIFNlcnZlciIgfHwgc2VydmVyPSJXZWJsb2dpYyIgfHwgYm9keT0iY29udGVudD1cIldlYkxvZ2ljIFNlcnZlciIgfHwgYm9keT0iPGgxPldlbGNvbWUgdG8gV2VibG9naWMgQXBwbGljYXRpb24iIHx8IGJvZHk9IjxoMT5CRUEgV2ViTG9naWMgU2VydmVyIikgJiYgaGVhZGVyIT0iY291Y2hkYiIgJiYgaGVhZGVyIT0iYm9hIiAmJiBoZWFkZXIhPSJSb3V0ZXJPUyIgJiYgaGVhZGVyIT0iWC1HZW5lcmF0b3I6IERydXBhbCIpIHx8IChiYW5uZXI9IldlYmxvZ2ljIiAmJiBiYW5uZXIhPSJjb3VjaGRiIiAmJiBiYW5uZXIhPSJkcnVwYWwiICYmIGJhbm5lciE9IiBBcGFjaGUsVG9tY2F0LEpib3NzIiAmJiBiYW5uZXIhPSJSZWVDYW0gSVAgQ2FtZXJhIiAmJiBiYW5uZXIhPSI8aDI%2BQmxvZyBDb21tZW50czwvaDI%2BIikpIHx8IChwb3J0PSI3MDAxIiAmJiBwcm90b2NvbD09IndlYmxvZ2ljIik%3D) |
+| **Number of assets affected**  | 126908 |
+| **Description**  | WebLogic Server is one of the application server components applicable to cloud and traditional environments. WebLogic has a remote code execution vulnerability, which allows an unauthenticated attacker to access and destroy the vulnerable WebLogic Server through the IIOP protocol network. A successful exploitation of the vulnerability can cause the WebLogic Server to be taken over by the attacker, resulting in remote code execution. |
+| **Impact** | WebLogic has a remote code execution vulnerability, which allows an unauthenticated attacker to access and destroy the vulnerable WebLogic Server through the IIOP protocol network. A successful exploitation of the vulnerability can cause the WebLogic Server to be taken over by the attacker, resulting in remote code execution. |
+
+![](https://s3.bmp.ovh/imgs/2023/04/21/4471db3f7b0147fa.gif)
+
+## Weblogic LinkRef Deserialization Remote Code Execution Vulnerability (CVE-2023-21931)
+
+|   **Vulnerability**  | **Weblogic LinkRef Deserialization Remote Code Execution Vulnerability (CVE-2023-21931)**  |
+| :----:   | :-----|
+|  **Chinese name**  | Weblogic LinkRef 反序列化远程代码执行漏洞（CVE-2023-21931） |
+| **CVSS core**  | 7.5 |
+| **FOFA Query**  (click to view the results directly)| [(body="Welcome to WebLogic Server") \|\| (title=="Error 404--Not Found") \|\| (((body="\<h1>BEA WebLogic Server" \|\| server="Weblogic" \|\| body="content=\"WebLogic Server" \|\| body="\<h1>Welcome to Weblogic Application" \|\| body="\<h1>BEA WebLogic Server") && header!="couchdb" && header!="boa" && header!="RouterOS" && header!="X-Generator: Drupal") \|\| (banner="Weblogic" && banner!="couchdb" && banner!="drupal" && banner!=" Apache,Tomcat,Jboss" && banner!="ReeCam IP Camera" && banner!="\<h2>Blog Comments</h2>")) \|\| (port="7001" && protocol=="weblogic")](https://en.fofa.info/result?qbase64=KGJvZHk9IldlbGNvbWUgdG8gV2ViTG9naWMgU2VydmVyIikgfHwgKHRpdGxlPT0iRXJyb3IgNDA0LS1Ob3QgRm91bmQiKSB8fCAoKChib2R5PSI8aDE%2BQkVBIFdlYkxvZ2ljIFNlcnZlciIgfHwgc2VydmVyPSJXZWJsb2dpYyIgfHwgYm9keT0iY29udGVudD1cIldlYkxvZ2ljIFNlcnZlciIgfHwgYm9keT0iPGgxPldlbGNvbWUgdG8gV2VibG9naWMgQXBwbGljYXRpb24iIHx8IGJvZHk9IjxoMT5CRUEgV2ViTG9naWMgU2VydmVyIikgJiYgaGVhZGVyIT0iY291Y2hkYiIgJiYgaGVhZGVyIT0iYm9hIiAmJiBoZWFkZXIhPSJSb3V0ZXJPUyIgJiYgaGVhZGVyIT0iWC1HZW5lcmF0b3I6IERydXBhbCIpIHx8IChiYW5uZXI9IldlYmxvZ2ljIiAmJiBiYW5uZXIhPSJjb3VjaGRiIiAmJiBiYW5uZXIhPSJkcnVwYWwiICYmIGJhbm5lciE9IiBBcGFjaGUsVG9tY2F0LEpib3NzIiAmJiBiYW5uZXIhPSJSZWVDYW0gSVAgQ2FtZXJhIiAmJiBiYW5uZXIhPSI8aDI%2BQmxvZyBDb21tZW50czwvaDI%2BIikpIHx8IChwb3J0PSI3MDAxIiAmJiBwcm90b2NvbD09IndlYmxvZ2ljIik%3D) |
+| **Number of assets affected**  | 127237 |
+| **Description**  | WebLogic Server is one of the application server components for cloud and traditional environments.There is a remote code execution vulnerability in WebLogic, which allows an unauthenticated attacker to access and damage the vulnerable WebLogic Server through the IIOP protocol network. Successful exploitation of the vulnerability can lead to WebLogic Server being taken over by the attacker, resulting in remote code execution. |
+| **Impact** | There is a remote code execution vulnerability in WebLogic, which allows an unauthenticated attacker to access and damage the vulnerable WebLogic Server through the IIOP protocol network. Successful exploitation of the vulnerability can lead to WebLogic Server being taken over by the attacker, resulting in remote code execution. |
+
+![](https://s3.bmp.ovh/imgs/2023/04/19/564df1e41195fca2.gif)
+
+## Apache CouchDB Unauthenticated Remote Code Execution Vulnerability (CVE-2022-24706)
+
+|   **Vulnerability**  | **Apache CouchDB Unauthenticated Remote Code Execution Vulnerability (CVE-2022-24706)**  |
+| :----:   | :-----|
+|  **Chinese name**  | Apache CouchDB 未认证远程代码执行漏洞 (CVE-2022-24706) |
+| **CVSS core**  | 9.8 |
+| **FOFA Query**  (click to view the results directly)| [banner=\"name couchdb at\"](https://en.fofa.info/result?qbase64=YmFubmVyPSJuYW1lIGNvdWNoZGIgYXQi) |
+| **Number of assets affected**  | 2817 |
+| **Description**  | Apache CouchDB is a document-oriented database system developed by the Apache Foundation using Erlang. An access control error vulnerability existed prior to Apache CouchDB 3.2.2 that stemmed from the ability of an attacker to access an incorrect default installation and gain administrator privileges without authenticating. |
+| **Impact** | Attackers can use this vulnerability to arbitrarily execute code on the server side, write backdoors, obtain server permissions, and then control the entire web server. |
+
+![](https://s3.bmp.ovh/imgs/2023/04/17/66ab3b4f04224398.gif)
+
+## ThinkPHP Debug Mode Log Information Disclosure Vulnerability
+
+|   **Vulnerability**  | **ThinkPHP Debug Mode Log Information Disclosure Vulnerability**  |
+| :----:   | :-----|
+|  **Chinese name**  | ThinkPHP Debug 模式日志信息泄露漏洞 |
+| **CVSS core**  | 5.0 |
+| **FOFA Query**  (click to view the results directly)| [(((header=\"thinkphp\" \|\| header=\"think_template\") && header!=\"couchdb\" && header!=\"St: upnp:rootdevice\") \|\| body=\"href=\\\"http://www.thinkphp.cn\\\">ThinkPHP\</a \>\<sup\>\" \|\| ((banner=\"thinkphp\" \|\| banner=\"think_template\") && banner!=\"couchdb\" && banner!=\"St: upnp:rootdevice\") \|\| (body=\"ThinkPHP\" && body=\"internal function\"))](https://en.fofa.info/result?qbase64=KCgoaGVhZGVyPSJ0aGlua3BocCIgfHwgaGVhZGVyPSJ0aGlua190ZW1wbGF0ZSIpICYmIGhlYWRlciE9ImNvdWNoZGIiICYmIGhlYWRlciE9IlN0OiB1cG5wOnJvb3RkZXZpY2UiKSB8fCBib2R5PSJocmVmPVwiaHR0cDovL3d3dy50aGlua3BocC5jblwiPlRoaW5rUEhQPC9hID48c3VwPiIgfHwgKChiYW5uZXI9InRoaW5rcGhwIiB8fCBiYW5uZXI9InRoaW5rX3RlbXBsYXRlIikgJiYgYmFubmVyIT0iY291Y2hkYiIgJiYgYmFubmVyIT0iU3Q6IHVwbnA6cm9vdGRldmljZSIpIHx8IChib2R5PSJUaGlua1BIUCIgJiYgYm9keT0iaW50ZXJuYWwgZnVuY3Rpb24iKSk%3D) |
+| **Number of assets affected**  | 680923 |
+| **Description**  | env configuration leakage: Attacker can fetch env configuration file in laravel framework 5.5.21 and earlier. CVE-2018-15133: In Laravel Framework through 5.5.40 and 5.6.x through 5.6.29, remote code execution might occur as a result of an unserialize call on a potentially untrusted X-XSRF-TOKEN value. This involves the decrypt method in Illuminate/Encryption/Encrypter.php and PendingBroadcast in gadgetchains/Laravel/RCE/3/chain.php in phpggc. The attacker must know the application key, which normally would never occur, but could happen if the attacker previously had privileged access or successfully accomplished a previous attack. When exploit CVE-2018-15133, you need to input a url path that support POST method. |
+| **Impact** | Laravel env configuration leakage |
+
+![](https://s3.bmp.ovh/imgs/2023/04/21/a15d8379c113c7b6.gif)
+
+
+## Laravel env configuration leakage
+
+|   **Vulnerability**  | **Laravel env configuration leakage**  |
+| :----:   | :-----|
+|  **Chinese name**  | Laravel 环境配置 信息泄露漏洞（CVE-2018-15133） |
+| **CVSS core**  | 8.1 |
+| **FOFA Query**  (click to view the results directly)| [(header=\"laravel_session\")](https://en.fofa.info/result?qbase64=KGhlYWRlcj0ibGFyYXZlbF9zZXNzaW9uIik%3D) |
+| **Number of assets affected**  | 1150688 |
+| **Description**  | env configuration leakage: Attacker can fetch env configuration file in laravel framework 5.5.21 and earlier. CVE-2018-15133: In Laravel Framework through 5.5.40 and 5.6.x through 5.6.29, remote code execution might occur as a result of an unserialize call on a potentially untrusted X-XSRF-TOKEN value. This involves the decrypt method in Illuminate/Encryption/Encrypter.php and PendingBroadcast in gadgetchains/Laravel/RCE/3/chain.php in phpggc. The attacker must know the application key, which normally would never occur, but could happen if the attacker previously had privileged access or successfully accomplished a previous attack. When exploit CVE-2018-15133, you need to input a url path that support POST method. |
+| **Impact** | Laravel env configuration leakage |
+
+## Nostromo nhttpd RCE (CVE-2019-16278)
+
+|   **Vulnerability**  | **Nostromo nhttpd RCE (CVE-2019-16278)**  |
+| :----:   | :-----|
+|  **Chinese name**  | Nostromo nhttpd远程代码执行漏洞（CVE-2019-16278） |
+| **CVSS core**  | 9.8 |
+| **FOFA Query**  (click to view the results directly)| [(header=\"Server: nostromo\" \|\| banner=\"Server: nostromo \")](https://en.fofa.info/result?qbase64=KGhlYWRlcj0iU2VydmVyOiBub3N0cm9tbyIgfHwgYmFubmVyPSJTZXJ2ZXI6IG5vc3Ryb21vICIp) |
+| **Number of assets affected**  | 3737 |
+| **Description**  | Directory Traversal in the function http_verify in nostromo nhttpd through 1.9.6 allows an attacker to achieve remote code execution via a crafted HTTP request. |
+| **Impact** | Nostromo nhttpd RCE (CVE-2019-16278) |
+
+![](https://s3.bmp.ovh/imgs/2023/04/21/5cc3d5eeb458b766.gif)
+
+## Kibana Unauthorized RCE (CVE-2019-7609)
+
+|   **Vulnerability**  | **Kibana Unauthorized RCE (CVE-2019-7609)**  |
+| :----:   | :-----|
+|  **Chinese name**  | Kibana 远程代码执行漏洞（CVE-2019-7609） |
+| **CVSS core**  | 6.0 |
+| **FOFA Query**  (click to view the results directly)| [(title=\"Kibana\" \|\| body=\"kbnVersion\" \|\| (header=\"Kbn-Name: kibana\" && header=\"Kbn-Version\") \|\| (body=\"kibana_dashboard_only_user\" && header=\"Kbn-Name\") \|\| (banner=\"Kbn-Name: kibana\" && banner=\"Kbn-Version\")) \|\| (title=\"Kibana\" \|\| body=\"kbnVersion\" \|\| (header=\"Kbn-Name: kibana\" && header=\"Kbn-Version\") \|\| (body=\"kibana_dashboard_only_user\" && header=\"Kbn-Name\") \|\| (banner=\"Kbn-Name: kibana\" && banner=\"Kbn-Version\"))](https://en.fofa.info/result?qbase64=KHRpdGxlPSJLaWJhbmEiIHx8IGJvZHk9ImtiblZlcnNpb24iIHx8IChoZWFkZXI9Iktibi1OYW1lOiBraWJhbmEiICYmIGhlYWRlcj0iS2JuLVZlcnNpb24iKSB8fCAoYm9keT0ia2liYW5hX2Rhc2hib2FyZF9vbmx5X3VzZXIiICYmIGhlYWRlcj0iS2JuLU5hbWUiKSB8fCAoYmFubmVyPSJLYm4tTmFtZToga2liYW5hIiAmJiBiYW5uZXI9Iktibi1WZXJzaW9uIikpIHx8ICh0aXRsZT0iS2liYW5hIiB8fCBib2R5PSJrYm5WZXJzaW9uIiB8fCAoaGVhZGVyPSJLYm4tTmFtZToga2liYW5hIiAmJiBoZWFkZXI9Iktibi1WZXJzaW9uIikgfHwgKGJvZHk9ImtpYmFuYV9kYXNoYm9hcmRfb25seV91c2VyIiAmJiBoZWFkZXI9Iktibi1OYW1lIikgfHwgKGJhbm5lcj0iS2JuLU5hbWU6IGtpYmFuYSIgJiYgYmFubmVyPSJLYm4tVmVyc2lvbiIpKQ%3D%3D) |
+| **Number of assets affected**  | 75087 |
+| **Description**  | By exploiting the vulnerability, the attacker can initiate relevant requests to kibana through the JavaScript prototype chain pollution attack in the timelion component, so as to take over the server and execute arbitrary commands on the server |
+| **Impact** | Kibana Unauthorized RCE (CVE-2019-7609) |
+
+
+## MCMS Shiro Deserialization Vulnerability (CVE-2022-22928)
+
+|   **Vulnerability**  | **MCMS Shiro Deserialization Vulnerability (CVE-2022-22928)**  |
+| :----:   | :-----|
+|  **Chinese name**  | 铭飞 MCMS shiro 反序列化漏洞（CVE-2022-22928） |
+| **CVSS core**  | 9.8 |
+| **FOFA Query**  (click to view the results directly)| [body=\"铭飞Mcms\" \|\| title=\"铭飞Mcms\"](https://en.fofa.info/result?qbase64=Ym9keT0i6ZOt6aOeTWNtcyIgfHwgdGl0bGU9IumTremjnk1jbXMi) |
+| **Number of assets affected**  | 295 |
+| **Description**  | Mingfei Mcms is a complete open source J2EE system of Mingfei Technology Co., Ltd. Mingfei Mcms V5 2.2 and earlier versions contain a security vulnerability, which stems from the existence of hard coded Shiro key in the software, which allows attackers to exploit the key and execute arbitrary code. |
+| **Impact** | Attackers can use this vulnerability to arbitrarily execute code on the server side, write backdoors, obtain server permissions, and then control the entire web server. |
+
+![](https://s3.bmp.ovh/imgs/2023/04/12/6e4ebece1945ba6f.gif)
+
+## GoAnywhere MFT Deserialization Vulnerability (CVE-2023-0669)
+
+|   **Vulnerability**  | **GoAnywhere MFT Deserialization Vulnerability (CVE-2023-0669)**  |
+| :----:   | :-----|
+|  **Chinese name**  | GoAnywhere MFT 反序列化漏洞（CVE-2023-0669） |
+| **CVSS core**  | 9.8 |
+| **FOFA Query**  (click to view the results directly)| [banner=\".goanywhere.com\" \|\| title=\"GoAnywhere\"](https://en.fofa.info/result?qbase64=YmFubmVyPSIuZ29hbnl3aGVyZS5jb20iIHx8IHRpdGxlPSJHb0FueXdoZXJlIg%3D%3D) |
+| **Number of assets affected**  | 4399 |
+| **Description**  | GoAnywhere MFT is a solution for managing file transfer, which simplifies data exchange between systems, employees, customers and trading partners. It provides centralized control through extensive security settings, detailed audit trails, and helps to process information in files into XML, EDI, CSV, and JSON databases. There is a Java deserialization vulnerability in GoAnywhere MFT. An attacker can use this vulnerability to execute arbitrary code, execute commands on the server, enter memory horses, etc., and obtain server privileges. |
+| **Impact** | There is a Java deserialization vulnerability in GoAnywhere MFT. An attacker can use this vulnerability to execute arbitrary code, execute commands on the server, enter memory horses, etc., and obtain server privileges. |
+
+![](https://s3.bmp.ovh/imgs/2023/04/12/a8aaa327c8938de6.gif)
+
+## ZOHO ManageEngine Password Manager Pro RCE (CVE-2022-35405)
+
+|   **Vulnerability**  | **ZOHO ManageEngine Password Manager Pro RCE (CVE-2022-35405)**  |
+| :----:   | :-----|
+|  **Chinese name**  | ZOHO ManageEngine Password Manager Pro 远程代码执行漏洞（CVE-2022-35405） |
+| **CVSS core**  | 9.8 |
+| **FOFA Query**  (click to view the results directly)| [banner=\"Server: PMP\" \|\| header=\"Server: PMP\" \|\| banner=\"Set-Cookie: pmpcc=\" \|\| header=\"Set-Cookie: pmpcc=\" \|\| title=\"ManageEngine Password Manager Pro\"](https://en.fofa.info/result?qbase64=YmFubmVyPSJTZXJ2ZXI6IFBNUCIgfHwgaGVhZGVyPSJTZXJ2ZXI6IFBNUCIgfHwgYmFubmVyPSJTZXQtQ29va2llOiBwbXBjYz0iIHx8IGhlYWRlcj0iU2V0LUNvb2tpZTogcG1wY2M9IiB8fCB0aXRsZT0iTWFuYWdlRW5naW5lIFBhc3N3b3JkIE1hbmFnZXIgUHJvIg%3D%3D) |
+| **Number of assets affected**  | 672 |
+| **Description**  | ZOHO ManageEngine Password Manager Pro is a password manager from the American company ZOHO. ZOHO ManageEngine Password Manager Pro versions prior to 12101 and PAM360 prior to 5510 have security vulnerabilities, attackers can execute arbitrary commands to gain server privileges. |
+| **Impact** | ZOHO ManageEngine Password Manager Pro versions prior to 12101 and PAM360 prior to 5510 have security vulnerabilities, attackers can execute arbitrary commands to gain server privileges. |
+
+![](https://s3.bmp.ovh/imgs/2023/04/12/8c05d22e66e4bd93.gif)
+
+## WordPress plugin Metform forms Information Disclosure (CVE-2022-1442)
+
+|   **Vulnerability**  | **WordPress plugin Metform forms Information Disclosure (CVE-2022-1442)**  |
+| :----:   | :-----|
+|  **Chinese name**  | WordPress Metform 插件 forms 文件信息泄露漏洞（CVE-2022-1442） |
+| **CVSS core**  | 7.5 |
+| **FOFA Query**  (click to view the results directly)| [body=\"wp-content/plugins/metform/\"](https://en.fofa.info/result?qbase64=Ym9keT0id3AtY29udGVudC9wbHVnaW5zL21ldGZvcm0vIg%3D%3D) |
+| **Number of assets affected**  | 13517 |
+| **Description**  | WordPress plugin Metform is a secure contact form plugin for WordPress. There is a security vulnerability in the WordPress plugin Metform. The vulnerability is caused by improper access control in the ~/core/forms/action.php file, and attackers can obtain various key information of users. |
+| **Impact** | There is a security vulnerability in the WordPress plugin Metform. The vulnerability is caused by improper access control in the ~/core/forms/action.php file, and attackers can obtain various key information of users. |
+
+![](https://s3.bmp.ovh/imgs/2023/04/12/d33ddd786b414472.gif)
+
+
+## CaiMore Gateway formping file Command Execution Vulnerability
+
+|   **Vulnerability**  | **CaiMore Gateway formping file Command Execution Vulnerability**  |
+| :----:   | :-----|
+|  **Chinese name**  | 厦门才茂通信科技有限公司网关 formping 文件命令执行漏洞 |
+| **CVSS core**  | 9.0 |
+| **FOFA Query**  (click to view the results directly)| [banner=\"Basic realm=\\\"CaiMore\" \|\| header=\"Basic realm=\\\"CaiMore\"](https://en.fofa.info/result?qbase64=YmFubmVyPSJCYXNpYyByZWFsbT1cXFwiQ2FpTW9yZSIgfHwgaGVhZGVyPSJCYXNpYyByZWFsbT1cXFwiQ2FpTW9yZSI%3D) |
+| **Number of assets affected**  | 1265 |
+| **Description**  | The gateway of Xiamen Caimao Communication Technology Co., Ltd. is designed with open software architecture. It is a metal shell design, with two Ethernet RJ45 interfaces, and an industrial design wireless gateway using 3G/4G/5G wide area network for Internet communication. There is a command execution vulnerability in the formping file of the gateway of Xiamen Caimao Communication Technology Co., Ltd. An attacker can use this vulnerability to arbitrarily execute code on the server side, write to the back door, obtain server permissions, and then control the entire web server. |
+| **Impact** | Attackers can use this vulnerability to arbitrarily execute code on the server side, write backdoors, obtain server permissions, and then control the entire web server. |
+
+![](https://s3.bmp.ovh/imgs/2023/04/12/7d6fdb188ac503b5.gif)
+
+## Hikvision iSecure Center springboot Information disclosure vulnerability
+
+|   **Vulnerability**  | **Hikvision iSecure Center springboot Information disclosure vulnerability**  |
+| :----:   | :-----|
+|  **Chinese name**  | 海康综合安防管理平台系统 springboot 信息泄露漏洞 |
+| **CVSS core**  | 7.5 |
+| **FOFA Query**  (click to view the results directly)| [title=\"综合安防管理平台\" && body=\"nginxService/v1/download/InstallRootCert.exe\"](https://en.fofa.info/result?qbase64=dGl0bGU9Iue7vOWQiOWuiemYsueuoeeQhuW5s%2BWPsCIgJiYgYm9keT0ibmdpbnhTZXJ2aWNlL3YxL2Rvd25sb2FkL0luc3RhbGxSb290Q2VydC5leGUi) |
+| **Number of assets affected**  | 3095 |
+| **Description**  | Hikvision iSecure Center is an integrated management platform, which can centrally manage the access video monitoring points to achieve unified deployment, configuration, management and scheduling. the framework it uses has a spring boot information disclosure vulnerability. An attacker can access the exposed route to obtain information such as environment variables, intranet addresses, and user names in the configuration. |
+| **Impact** | Hikvision iSecure Center is a spring boot information disclosure vulnerability. An attacker can access and download the heapdump heap to obtain sensitive information such as the intranet account password. |
+
+![](https://s3.bmp.ovh/imgs/2023/04/13/47c0acd2094e7191.gif)
+
+
+## Ruiyou Tianyi Application Virtualization System Index.php File Remote Code Execution Vulnerability
+
+|   **Vulnerability**  | **Ruiyou Tianyi Application Virtualization System Index.php File Remote Code Execution Vulnerability**  |
+| :----:   | :-----|
+|  **Chinese name**  | 瑞友天翼应用虚拟化系统 index.php 文件远程代码执行漏洞 |
+| **CVSS core**  | 9.3 |
+| **FOFA Query**  (click to view the results directly)| [body="瑞友应用虚拟化系统" \|\| body="CASMain.XGI?cmd=" \|\| body="瑞友天翼－应用虚拟化系统" \|\| body="DownLoad.XGI?pram="](https://en.fofa.info/result?qbase64=Ym9keT0i55Ge5Y%2BL5bqU55So6Jma5ouf5YyW57O757ufIiB8fCBib2R5PSJDQVNNYWluLlhHST9jbWQ9IiB8fCBib2R5PSLnkZ7lj4vlpKnnv7zvvI3lupTnlKjomZrmi5%2FljJbns7vnu58iIHx8IGJvZHk9IkRvd25Mb2FkLlhHST9wcmFtPSI%3D) |
+| **Number of assets affected**  | 61711 |
+| **Description**  | Ruiyou Tianyi Application Virtualization System Remote Code Execution Vulnerability Intelligence (0day) allows attackers to execute arbitrary code through this vulnerability, resulting in the system being attacked and controlled. The Ruiyou Tianyi Application Virtualization System is an application virtualization platform based on server computing architecture. It centrally deploys various user application software to the Ruiyou Tianyi service cluster, and clients can access authorized application software on the server through the WEB, achieving centralized application, remote access, collaborative office, and more. Attackers can use this vulnerability to arbitrarily execute code on the server side, write backdoors, obtain server permissions, and then control the entire web server. |
+| **Impact** | Attackers can use this vulnerability to arbitrarily execute code on the server side, write backdoors, obtain server permissions, and then control the entire web server. |
+
+![](https://s3.bmp.ovh/imgs/2023/04/11/ad85ca285f103af4.gif)
+
+## Superdata Software V.NET Struts2 Code Execution Vulnerability
+
+|   **Vulnerability**  | **Superdata Software V.NET Struts2 Code Execution Vulnerability**  |
+| :----:   | :-----|
+|  **Chinese name**  | 速达软件 V.NET home 文件 存在 Struts2 代码执行漏洞 |
+| **CVSS core**  | 9.0 |
+| **FOFA Query**  (click to view the results directly)| [body="速达软件技术（广州）有限公司"](https://en.fofa.info/result?qbase64=Ym9keT0i6YCf6L6%2B6L2v5Lu25oqA5pyv77yI5bm%2F5bee77yJ5pyJ6ZmQ5YWs5Y%2B4Ig%3D%3D) |
+| **Number of assets affected**  | 16627 |
+| **Description**  | Superdata software management system is a complete set of enterprise business management system, which organically integrates enterprise purchase management, sales management, warehousing management and financial management. It is extremely easy to use and practical, and comprehensively improves enterprise management ability and work efficiency. Many products of superdata software technology (Guangzhou) Co., Ltd. have code execution vulnerabilities. The code does not filter the controllable parameters of the user, leading to the direct introduction of execution commands and codes, the execution of maliciously constructed statements, and the execution of arbitrary commands or codes through the vulnerability. Attackers can execute arbitrary commands, read and write files, etc. on the server, which is very harmful. |
+| **Impact** | Because the code does not filter the user controllable parameters, it directly leads to the execution of commands and code, and executes maliciously constructed statements and arbitrary commands or code through vulnerabilities. Attackers can execute arbitrary commands, read and write files, etc. on the server, which is very harmful. |
+
+![](https://s3.bmp.ovh/imgs/2023/04/10/df1506737795d6f4.gif)
+
+## OpenCart So Newsletter Custom Popup 4.0 module email parameter SQL injection vulnerability
+
+|   **Vulnerability**  | **OpenCart So Newsletter Custom Popup 4.0 module email parameter SQL injection vulnerability**  |
+| :----:   | :-----|
+|  **Chinese name**  | OpenCart So Newsletter Custom Popup 4.0 模块 email 参数 SQL 注入漏洞 |
+| **CVSS core**  | 7.5 |
+| **FOFA Query**  (click to view the results directly)| [body="extension/module/so_newletter_custom_popup/newsletter"](https://en.fofa.info/result?qbase64=Ym9keT0iZXh0ZW5zaW9uL21vZHVsZS9zb19uZXdsZXR0ZXJfY3VzdG9tX3BvcHVwL25ld3NsZXR0ZXIi) |
+| **Number of assets affected**  | 4474 |
+| **Description**  | The OpenCart Newsletter Custom Popup module is a module for newsletter subscriptions. There is a SQL injection vulnerability in the email parameter of the extension/module/so_newletter_custom_popup/newsletter interface of the Opencart Newsletter Custom Popup 4.0 module due to improper filtering. |
+| **Impact** | In addition to using SQL injection vulnerabilities to obtain information in the database (for example, the administrator's back-end password, the user's personal information of the site), an attacker can write a Trojan horse to the server even in a high-privileged situation to further obtain server system permissions. |
+
+![](https://s3.bmp.ovh/imgs/2023/04/12/0092879ad5b9054b.gif)
+
+## WordPress plugin AWP Classifieds SQL injection vulnerability (CVE-2022-3254)
+
+|   **Vulnerability**  | **WordPress plugin AWP Classifieds SQL injection vulnerability (CVE-2022-3254)**  |
+| :----:   | :-----|
+|  **Chinese name**  | WordPress AWP Classifieds 插件 admin-ajax.php 文件 type 参数SQL注入漏洞（CVE-2022-3254） |
+| **CVSS core**  | 9.8 |
+| **FOFA Query**  (click to view the results directly)| [body="wp-content/plugins/another-wordpress-classifieds"](https://en.fofa.info/result?qbase64=Ym9keT0id3AtY29udGVudC9wbHVnaW5zL2Fub3RoZXItd29yZHByZXNzLWNsYXNzaWZpZWRzIg%3D%3D) |
+| **Number of assets affected**  | 3526 |
+| **Description**  | WordPress plugin AWP Classifieds is a leading plug-in that quickly and easily adds classified ads sections to your WordPress website in minutes. WordPress plugin AWP Classifieds has an SQL injection vulnerability prior to 4.3, which is caused by the plugin's inability to escape the type parameter correctly. Attackers can exploit the vulnerability to obtain sensitive information such as user names and passwords. |
+| **Impact** | WordPress plugin AWP Classifieds has an SQL injection vulnerability prior to 4.3, which is caused by the plugin's inability to escape the type parameter correctly. Attackers can exploit the vulnerability to obtain sensitive information such as user names and passwords. |
+
+![](https://s3.bmp.ovh/imgs/2023/04/13/812af92728d9dd9a.gif)
+
+## GetSimpleCMS theme-edit.php content Arbitrary code execution vulnerability (CVE-2022-41544)
+
+|   **Vulnerability**  | **GetSimpleCMS theme-edit.php content Arbitrary code execution vulnerability (CVE-2022-41544)**  |
+| :----:   | :-----|
+|  **Chinese name**  | GetSimpleCMS 内容管理系统 theme-edit.php 文件 content 参数任意代码执行漏洞（CVE-2022-41544） |
+| **CVSS core**  | 9.8 |
+| **FOFA Query**  (click to view the results directly)| [(body=\"content=\\\"GetSimple\" \|\| body=\"Powered by GetSimple\")](https://en.fofa.info/result?qbase64=KGJvZHk9ImNvbnRlbnQ9XFxcIkdldFNpbXBsZSIgfHwgYm9keT0iUG93ZXJlZCBieSBHZXRTaW1wbGUiKQ%3D%3D) |
+| **Number of assets affected**  | 2784 |
+| **Description**  | GetSimple CMS is a content management system (CMS) written in the PHP language. GetSimple CMS v3.3.16 has a security vulnerability that stems from the discovery of the remote Code execution (RCE) vulnerability through the edited_file parameter in admin/theme-edit.php. |
+| **Impact** | GetSimple CMS v3.3.16 has a security vulnerability that stems from the discovery of the remote Code execution (RCE) vulnerability through the edited_file parameter in admin/theme-edit.php. |
+
+![](https://s3.bmp.ovh/imgs/2023/04/13/fc08fe3813440052.gif)
+
 
 ## NUUO NVR __debugging_center_utils___.php Command Execution
 
@@ -9,7 +244,7 @@ The following content is an updated vulnerability from Goby. Some of the vulnera
 | :----:   | :-----|
 |  **Chinese name**  |   NUUO NVR 摄像机 __debugging_center_utils___.php 命令执行漏洞 |
 | **CVSS core**  | 9.0 |
-| **FOFA Query**  (click to view the results directly)| [title="Network Video Recorder Login"](https://fofa.info/result?qbase64=dGl0bGU9Ik5ldHdvcmsgVmlkZW8gUmVjb3JkZXIgTG9naW4i) |
+| **FOFA Query**  (click to view the results directly)| [title="Network Video Recorder Login"](https://en.fofa.info/result?qbase64=dGl0bGU9Ik5ldHdvcmsgVmlkZW8gUmVjb3JkZXIgTG9naW4i) |
 | **Number of assets affected**  | 10146 |
 | **Description**  | The NUUO NVR video storage management device __debugging_center_utils___.php has an unauthorized remote command execution vulnerability. An attacker can execute arbitrary system commands without any permissions, thereby invading the server and obtaining administrator permissions on the server. |
 | **Impact** | Attackers can use this vulnerability to arbitrarily execute code on the server side, write backdoors, obtain server permissions, and then control the entire web server.< |
@@ -22,7 +257,7 @@ The following content is an updated vulnerability from Goby. Some of the vulnera
 | :----:   | :-----|
 |  **Chinese name**  |   Grafana 网络应用程序平台 welcome 任意文件读取漏洞 |
 | **CVSS core**  | 7.5 |
-| **FOFA Query**  (click to view the results directly)| [app="Grafana_Labs-公司产品"](https://fofa.info/result?qbase64=YXBwPSJHcmFmYW5hX0xhYnMt5YWs5Y%2B45Lqn5ZOBIg%3D%3D) |
+| **FOFA Query**  (click to view the results directly)| [app="Grafana_Labs-公司产品"](https://en.fofa.info/result?qbase64=YXBwPSJHcmFmYW5hX0xhYnMt5YWs5Y%2B45Lqn5ZOBIg%3D%3D) |
 | **Number of assets affected**  | 369673 |
 | **Description**  | Grafana is a cross-platform, open source platform for data visualization web applications. After users configure the connected data source, Grafana can display data graphs and warnings in a Web browser. Unauthorized attackers can exploit this vulnerability and gain access to sensitive server files. |
 | **Impact** | Grafana can display graphs and warnings in a Web browser. Unauthorized attackers can exploit this vulnerability and gain access to sensitive server files. |
@@ -35,7 +270,7 @@ The following content is an updated vulnerability from Goby. Some of the vulnera
 | :----:   | :-----|
 |  **Chinese name**  |    MeterSphere 文件读取漏洞（CVE-2023-25814） |
 | **CVSS core**  | 7.5 |
-| **FOFA Query**  (click to view the results directly)| [app="FIT2CLOUD-MeterSphere"](https://fofa.info/result?qbase64=YXBwPSJGSVQyQ0xPVUQtTWV0ZXJTcGhlcmUi) |
+| **FOFA Query**  (click to view the results directly)| [app="FIT2CLOUD-MeterSphere"](https://en.fofa.info/result?qbase64=YXBwPSJGSVQyQ0xPVUQtTWV0ZXJTcGhlcmUi) |
 | **Number of assets affected**  | 2552 |
 | **Description**  | MeterSphere is a one-stop open source continuous testing platform, covering functions such as test tracking, interface testing, UI testing and performance testing, and is fully compatible with mainstream open source standards such as JMeter and Selenium. MeterSphere has an unauthorized arbitrary file read vulnerability. |
 | **Impact** | Attackers can use this vulnerability to read the leaked source code, database configuration files, etc., resulting in an extremely insecure website. |
@@ -49,7 +284,7 @@ The following content is an updated vulnerability from Goby. Some of the vulnera
 | :----:   | :-----|
 |  **Chinese name**  | 		用友NC com.ufsoft.iufo.jiuqi.JiuQiClientReqDispatch 反序列化命令执行漏洞 |
 | **CVSS core**  | 9.8 |
-| **FOFA Query**  (click to view the results directly)| [app="Yonyou-UFIDA-NC"](https://fofa.info/result?qbase64=YXBwPSJZb255b3UtVUZJREEtTkMi) |
+| **FOFA Query**  (click to view the results directly)| [app="Yonyou-UFIDA-NC"](https://en.fofa.info/result?qbase64=YXBwPSJZb255b3UtVUZJREEtTkMi) |
 | **Number of assets affected**  | 11642 |
 | **Description**  | PlaySMS is a free and open source SMS gateway software. An input validation error vulnerability existed in PlaySMS versions prior to 1.4.3, which was caused by the program not sanitizing malicious strings. An attacker could exploit this vulnerability to execute arbitrary code. |
 | **Impact** | An input validation error vulnerability existed in PlaySMS versions prior to 1.4.3, which was caused by the program not sanitizing malicious strings. An attacker could exploit this vulnerability to execute arbitrary code. |
@@ -62,7 +297,7 @@ The following content is an updated vulnerability from Goby. Some of the vulnera
 | :----:   | :-----|
 |  **Chinese name**  | 	OneThink 内容管理框架 category 方法代码执行漏洞 |
 | **CVSS core**  | 10.0 |
-| **FOFA Query**  (click to view the results directly)| [(header="ThinkPHP" && title="Onethink") \|\| body="<a href=\\\"http://www.onethink.cn\\\" target=\\\"_blank\\\">OneThink\</a>" \|\| body="/css/onethink.css"](https://fofa.info/result?qbase64=KGhlYWRlcj0iVGhpbmtQSFAiICYmIHRpdGxlPSJPbmV0aGluayIpIHx8IGJvZHk9IjxhIGhyZWY9XFxcImh0dHA6Ly93d3cub25ldGhpbmsuY25cXFwiIHRhcmdldD1cXFwiX2JsYW5rXFxcIj5PbmVUaGluazwvYT4iIHx8IGJvZHk9Ii9jc3Mvb25ldGhpbmsuY3NzIg%3D%3D) |
+| **FOFA Query**  (click to view the results directly)| [(header="ThinkPHP" && title="Onethink") \|\| body="<a href=\\\"http://www.onethink.cn\\\" target=\\\"_blank\\\">OneThink\</a>" \|\| body="/css/onethink.css"](https://en.fofa.info/result?qbase64=KGhlYWRlcj0iVGhpbmtQSFAiICYmIHRpdGxlPSJPbmV0aGluayIpIHx8IGJvZHk9IjxhIGhyZWY9XFxcImh0dHA6Ly93d3cub25ldGhpbmsuY25cXFwiIHRhcmdldD1cXFwiX2JsYW5rXFxcIj5PbmVUaGluazwvYT4iIHx8IGJvZHk9Ii9jc3Mvb25ldGhpbmsuY3NzIg%3D%3D) |
 | **Number of assets affected**  | 2854 |
 | **Description**  |  OneThink is an open source content management framework developed by the ThinkPHP team based on ThinkPHP. There is a SQL injection vulnerability in the category parameter of the front-end home/article/index method of the OneThink system v1 version. An attacker can use the vulnerability to jointly query any template, causing the file to be included, and finally obtain server permissions. |
 | **Impact** | There is a SQL injection vulnerability in the category parameter of the front-end home/article/index method of the OneThink system v1 version. An attacker can use the vulnerability to jointly query any template, causing the file to be included, and finally obtain server permissions. |
@@ -75,7 +310,7 @@ The following content is an updated vulnerability from Goby. Some of the vulnera
 | :----:   | :-----|
 |  **Chinese name**  | wavlink mesh.cgi命令执行漏洞（CVE-2022-2486） |
 | **CVSS core**  | 9.8 |
-| **FOFA Query**  (click to view the results directly)| [body="firstFlage"](https://fofa.info/result?qbase64=Ym9keT0iZmlyc3RGbGFnZSI%3D) |
+| **FOFA Query**  (click to view the results directly)| [body="firstFlage"](https://en.fofa.info/result?qbase64=Ym9keT0iZmlyc3RGbGFnZSI%3D) |
 | **Number of assets affected**  | 3078 |
 | **Description**  | WAVLINK is a router developed by China Ruiyin Technology (WAVLINK) company. The system mesh.cgi file has a command execution vulnerability, and attackers can obtain server privileges through this vulnerability. Including models WN530HG4, WN531G3, WN572HG3, WN535G3, WN575A4, etc. |
 | **Impact** | Attackers can use this vulnerability to execute system commands to gain server privileges. |
@@ -89,7 +324,7 @@ The following content is an updated vulnerability from Goby. Some of the vulnera
 | :----:   | :-----|
 |  **Chinese name**  | WSO2 API Manager 系统 save_artifact_ajaxprocessor.jsp XXE 漏洞（CVE-2020-24589） |
 | **CVSS core**  | 9.1 |
-| **FOFA Query**  (click to view the results directly)| [title="WSO2" \|\| header="Server: WSO2 Carbon Server" \|\| banner="Server: WSO2 Carbon Server"](https://fofa.info/result?qbase64=dGl0bGU9IldTTzIiIHx8IGhlYWRlcj0iU2VydmVyOiBXU08yIENhcmJvbiBTZXJ2ZXIiIHx8IGJhbm5lcj0iU2VydmVyOiBXU08yIENhcmJvbiBTZXJ2ZXIi) |
+| **FOFA Query**  (click to view the results directly)| [title="WSO2" \|\| header="Server: WSO2 Carbon Server" \|\| banner="Server: WSO2 Carbon Server"](https://en.fofa.info/result?qbase64=dGl0bGU9IldTTzIiIHx8IGhlYWRlcj0iU2VydmVyOiBXU08yIENhcmJvbiBTZXJ2ZXIiIHx8IGJhbm5lcj0iU2VydmVyOiBXU08yIENhcmJvbiBTZXJ2ZXIi) |
 | **Number of assets affected**  | 15231 |
 | **Description**  | WSO2 API Manager is a set of API lifecycle management solutions from WSO2 in the United States. A vulnerability exists in WSO2 API Manager. The following products and versions are affected: WSO2 API Manager from version 3.1.0 and API Microgateway version 2.2.0, the attacker can read arbitrary files and detect intranet information, etc. |
 | **Impact** | A vulnerability exists in WSO2 API Manager. The following products and versions are affected: WSO2 API Manager from version 3.1.0 and API Microgateway version 2.2.0, the attacker can read arbitrary files and detect intranet information, etc. |
@@ -103,7 +338,7 @@ The following content is an updated vulnerability from Goby. Some of the vulnera
 | :----:   | :-----|
 |  **Chinese name**  | Liferay Portal 7.2.1 版本 invoke 文件远程代码执行漏洞（CVE-2020-7961）） |
 | **CVSS core**  | 10.0 |
-| **FOFA Query**  (click to view the results directly)| [body="Powered by Liferay Portal" \|\| header="Liferay Portal" \|\| banner="Liferay Portal" \|\| header="guest_language_id=" \|\| banner="guest_language_id=" \|\| body="Liferay.AUI" \|\| body="Liferay.currentURL"](https://fofa.info/result?qbase64=Ym9keT0iUG93ZXJlZCBieSBMaWZlcmF5IFBvcnRhbCIgfHwgaGVhZGVyPSJMaWZlcmF5IFBvcnRhbCIgfHwgYmFubmVyPSJMaWZlcmF5IFBvcnRhbCIgfHwgaGVhZGVyPSJndWVzdF9sYW5ndWFnZV9pZD0iIHx8IGJhbm5lcj0iZ3Vlc3RfbGFuZ3VhZ2VfaWQ9IiB8fCBib2R5PSJMaWZlcmF5LkFVSSIgfHwgYm9keT0iTGlmZXJheS5jdXJyZW50VVJMIg%3D%3D) |
+| **FOFA Query**  (click to view the results directly)| [body="Powered by Liferay Portal" \|\| header="Liferay Portal" \|\| banner="Liferay Portal" \|\| header="guest_language_id=" \|\| banner="guest_language_id=" \|\| body="Liferay.AUI" \|\| body="Liferay.currentURL"](https://en.fofa.info/result?qbase64=Ym9keT0iUG93ZXJlZCBieSBMaWZlcmF5IFBvcnRhbCIgfHwgaGVhZGVyPSJMaWZlcmF5IFBvcnRhbCIgfHwgYmFubmVyPSJMaWZlcmF5IFBvcnRhbCIgfHwgaGVhZGVyPSJndWVzdF9sYW5ndWFnZV9pZD0iIHx8IGJhbm5lcj0iZ3Vlc3RfbGFuZ3VhZ2VfaWQ9IiB8fCBib2R5PSJMaWZlcmF5LkFVSSIgfHwgYm9keT0iTGlmZXJheS5jdXJyZW50VVJMIg%3D%3D) |
 | **Number of assets affected**  | 59885 |
 | **Description**  | Liferay Portal is a set of J2EE-based portal solutions of American Liferay Company. The program uses EJB and JMS and other technologies, and can be used as Web publishing and sharing workspace, enterprise collaboration platform, social network and so on. A code issue vulnerability exists in versions prior to Liferay Portal 7.2.1 CE GA2. A remote attacker could exploit this vulnerability to execute arbitrary code using JSON Web services. |
 | **Impact** | A code issue vulnerability exists in versions prior to Liferay Portal 7.2.1 CE GA2. A remote attacker could exploit this vulnerability to execute arbitrary code using JSON Web services. |
